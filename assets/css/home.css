@@ -1,0 +1,103 @@
+body{
+    margin: 0px;
+    background-color: black;
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* Heading */
+#heading{
+    margin-left: 40vw;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Contact list Styling */
+#container{
+    width: 40%;
+    margin-left: 30vw;
+}
+
+#container ul{
+    padding: 0;
+    list-style: none;
+}
+
+.contact{
+    /* list-style: circle; */
+    border: 1px solid white;
+    background-color: lightblue;
+    padding: 3px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    color: black;
+    display: flex;
+}
+
+.contact:hover{
+    background-color: lightgray;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.details p{
+    margin: 5px;
+}
+
+.delete{
+   width: 10%;
+   text-align: center;
+   margin-top: 4px;
+}
+
+.delete a{
+    color: red;
+}
+
+/* input/button styling */
+#add-contact{
+    display: flex;
+    width: 40%;
+    margin-left: 30vw;
+}
+
+#add-contact  input{
+    width: 45%;
+    margin-right: 3px;
+    height: 20px;
+}
+
+#add-contact button{
+    width: 15%;
+    background-color:green;
+    padding: 1px 1px 1px 1px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+        min-width: 60%;
+    }
+
+    #heading{
+        margin-left: 15%;
+        font-size: 25px;
+    }
+
+    #container{
+        min-width: 55%;
+        margin-left: 10%;
+    }
+
+    #add-contact{
+        min-width: 55%;
+        margin-left: 10%;
+    }
+  }
